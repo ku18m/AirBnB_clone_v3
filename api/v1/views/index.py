@@ -9,6 +9,7 @@ def status():
     """Return status, first endpoint of the api"""
     return jsonify({"status": "OK"})
 
+
 @app_views.route('/stats', methods=['GET'], strict_slashes=False)
 def stats():
     """Return stats, second endpoint of the api"""
