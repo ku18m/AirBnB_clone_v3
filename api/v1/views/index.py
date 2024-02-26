@@ -8,3 +8,16 @@ from flask import jsonify
 def status():
     """Return status, first endpoint of the api"""
     return jsonify({"status": "OK"})
+
+@app_views.route('/stats', methods=['GET'], strict_slashes=False)
+def stats():
+    """Return stats, second endpoint of the api"""
+    from models import storage
+    return jsonify({
+        "amenities": storage.count("Amenity"),
+        "cities": storage.count("City"),
+        "places": storage.count("Place"),
+        "reviews": storage.count("Review"),
+        "states": storage.count("State"),
+        "users": storage.count("User")
+    })
