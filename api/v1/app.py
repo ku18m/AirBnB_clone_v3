@@ -17,7 +17,9 @@ def close_db(error):
 
 
 if __name__ == "__main__":
-    """run the app"""
+    """
+    run the app with the host and port from the environment or default values
+    """
     host = '0.0.0.0' if getenv('HBNB_API_HOST') is None else getenv(
         'HBNB_API_HOST')
     port = 5000 if getenv('HBNB_API_PORT') is None else int(getenv(
