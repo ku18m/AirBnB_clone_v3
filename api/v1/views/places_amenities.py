@@ -28,7 +28,7 @@ def handle_place_amenities(place_id):
     )
 def handle_place_amenity(place_id, amenity_id):
     """handle a specific amenity of a place"""
-    from models import storage, storage_t
+    from models import storage
     place = storage.get("Place", place_id)
     if place is None:
         from api.v1.app import not_found
@@ -39,18 +39,16 @@ def handle_place_amenity(place_id, amenity_id):
     if request.method == 'DELETE':
         if amenity not in place.amenities:
             return not_found(None)
-        if storage_t == 'db':
-            place.amenities.remove(amenity)
-        else:
-            place.amenity_ids.remove(amenity)
+        
+        place.amenities.remove(amenity)
+        # place.amenity_ids.remove(amenity)
         place.save()
         return jsonify({}), 200
     if request.method == 'POST':
         if amenity in place.amenities:
             return jsonify(amenity.to_dict()), 200
-        if storage_t == 'db':
-            place.amenities.append(amenity)
-        else:
-            place.amenity_ids.append(amenity)
+        
+        place.amenities.append(amenity)
+        # place.amenity_ids.append(amenity)
         place.save()
         return jsonify(amenity.to_dict()), 201
