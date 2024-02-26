@@ -101,5 +101,5 @@ def handle_places_search():
         for place in all_places:
             if all(amenity in place.amenities for amenity in amenities):
                 places.append(place)
-    # places = list(set(places))
+    places = list(set(places))
     return jsonify([place.to_dict() for place in places])
