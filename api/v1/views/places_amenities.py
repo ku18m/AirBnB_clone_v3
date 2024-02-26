@@ -29,9 +29,9 @@ def handle_place_amenities(place_id):
 def handle_place_amenity(place_id, amenity_id):
     """handle a specific amenity of a place"""
     from models import storage, storage_t
+    from api.v1.app import not_found
     place = storage.get("Place", place_id)
     if place is None:
-        from api.v1.app import not_found
         return not_found(None)
     amenity = storage.get("Amenity", amenity_id)
     if amenity is None:
