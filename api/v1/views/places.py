@@ -69,3 +69,37 @@ def handle_place(place_id):
                 setattr(place, key, value)
         place.save()
         return jsonify(place.to_dict()), 200
+
+
+@app_views.route(
+    '/places_search',
+    methods=['POST'],
+    strict_slashes=False
+    )
+def handle_places_search():
+    """handle places search"""
+    data = request.get_json(silent=True)
+    if data is None:
+        return jsonify({"error": "Not a JSON"}), 400
+    from models import storage
+    all_places = storage.all("Place").values()
+    places = []
+    if "states" in data:
+        for state_id in data["states"]:
+            state = storage.get("State", state_id)
+            if state is not None:
+                for city in state.cities:
+                    places.extend(city.places)
+    if "cities" in data:
+        for city_id in data["cities"]:
+            city = storage.get("City", city_id)
+            if city is not None:
+                places.extend(city.places)
+    if "amenities" in data:
+        amenities = [storage.get("Amenity", amenity_id)
+                     for amenity_id in data["amenities"]]
+        for place in all_places:
+            if all(amenity in place.amenities for amenity in amenities):
+                places.append(place)
+    places = list(set(places))
+    return jsonify([place.to_dict() for place in places])
