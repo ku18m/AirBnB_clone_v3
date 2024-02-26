@@ -1,9 +1,9 @@
 #!/usr/bin/python3
+"""api module main"""
 from models import storage
 from flask import Flask
 from api.v1.views import app_views
 from os import getenv
-"""api module main"""
 
 
 app = Flask(__name__)
