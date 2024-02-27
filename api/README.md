@@ -33,7 +33,7 @@
 
 | Task | File |
 | ---- | ---- |
-| 0. Restart from scratch! | [SOON](./) |
+| 0. Restart from scratch! | (./) |
 | 1. Never fail! | [SOON](./) |
 | 2. Improve storage | [SOON](./) |
 | 3. Status of your API | [SOON](./) |
