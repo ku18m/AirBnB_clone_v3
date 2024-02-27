@@ -36,7 +36,7 @@
 | 0. Restart from scratch! | (./) |
 | 1. Never fail! | (../tests) |
 | 2. Improve storage | (../models) |
-| 3. Status of your API | [SOON](./) |
+| 3. Status of your API | (./v1/views/index.py) |
 | 4. Some stats? | [SOON](./) |
 | 5. Not found | [SOON](./) |
 | 6. State | [SOON](./) |
