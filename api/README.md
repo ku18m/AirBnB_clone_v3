@@ -45,7 +45,7 @@
 | 9. User | (./v1/views/users.py) |
 | 10. Place | (./v1/views/places.py) |
 | 11. Reviews | (./v1/views/places_reviews.py) |
-| 12. HTTP access control (CORS) | [SOON](./) |
+| 12. HTTP access control (CORS) | (./v1/app.py) |
 | 13. Place - Amenity | [SOON](./) |
 | 14. Security improvements! | [SOON](./) |
 | 15. Search | [SOON](./) |
