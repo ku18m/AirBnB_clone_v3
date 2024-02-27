@@ -38,7 +38,7 @@
 | 2. Improve storage | (../models) |
 | 3. Status of your API | (./v1/views/index.py) |
 | 4. Some stats? | (./v1/views/index.py) |
-| 5. Not found | [SOON](./) |
+| 5. Not found | (./v1/app.py) |
 | 6. State | [SOON](./) |
 | 7. City | [SOON](./) |
 | 8. Amenity | [SOON](./) |
