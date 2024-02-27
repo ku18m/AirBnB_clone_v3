@@ -154,6 +154,12 @@ EOF  all  create  destroy  help  quit  show  update
 No known bugs at this time. 
 
 ## Authors
+
+# v3
+Mohamed Kamal - [Github](https://github.com/ku18m) / [Twitter](https://twitter.com/ku18m1)
+Madonna Ramsis - [Github](https://github.com/madonnaramsis) / [Twitter](https://twitter.com/madonnaramsis)
+
+# v2
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
 
