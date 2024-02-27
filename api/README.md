@@ -48,4 +48,4 @@
 | 12. HTTP access control (CORS) | (./v1/app.py) |
 | 13. Place - Amenity | (./v1/views/places_amenities.py) |
 | 14. Security improvements! | (../models/user.py) + (../models/base_model.py) |
-| 15. Search | [SOON](./) |
+| 15. Search |  + (../v1/views/places.py) |
