@@ -42,7 +42,7 @@
 | 6. State | (./v1/views/states.py) |
 | 7. City | (./v1/views/cities.py) |
 | 8. Amenity | (./v1/views/amenities.py) |
-| 9. User | [SOON](./) |
+| 9. User | (./v1/views/users.py) |
 | 10. Place | [SOON](./) |
 | 11. Reviews | [SOON](./) |
 | 12. HTTP access control (CORS) | [SOON](./) |
