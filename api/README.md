@@ -41,7 +41,7 @@
 | 5. Not found | (./v1/app.py) |
 | 6. State | (./v1/views/states.py) |
 | 7. City | (./v1/views/cities.py) |
-| 8. Amenity | [SOON](./) |
+| 8. Amenity | (./v1/views/amenities.py) |
 | 9. User | [SOON](./) |
 | 10. Place | [SOON](./) |
 | 11. Reviews | [SOON](./) |
