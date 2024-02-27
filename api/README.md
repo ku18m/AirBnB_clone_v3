@@ -35,7 +35,7 @@
 | ---- | ---- |
 | 0. Restart from scratch! | (./) |
 | 1. Never fail! | (../tests) |
-| 2. Improve storage | [SOON](./) |
+| 2. Improve storage | (../models) |
 | 3. Status of your API | [SOON](./) |
 | 4. Some stats? | [SOON](./) |
 | 5. Not found | [SOON](./) |
