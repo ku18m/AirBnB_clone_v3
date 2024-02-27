@@ -47,5 +47,5 @@
 | 11. Reviews | (./v1/views/places_reviews.py) |
 | 12. HTTP access control (CORS) | (./v1/app.py) |
 | 13. Place - Amenity | (./v1/views/places_amenities.py) |
-| 14. Security improvements! | (../models/user.py) |
+| 14. Security improvements! | (../models/user.py) + (../models/base_model.py) |
 | 15. Search | [SOON](./) |
