@@ -4,10 +4,8 @@ from models import storage
 from flask import Flask
 from flask_cors import CORS
 from api.v1.views import app_views
-from dotenv import load_dotenv
 from os import getenv
 
-load_dotenv()
 
 app = Flask(__name__)
 app.register_blueprint(app_views)
